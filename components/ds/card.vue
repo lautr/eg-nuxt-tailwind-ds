@@ -1,5 +1,6 @@
 <template>
   <div :class="$style['ds-card']">
+    <img v-if="image" :src="image" />
     <span v-if="title" :class="$style['ds-card__title']">{{ title }}</span>
     <div>
       <slot />

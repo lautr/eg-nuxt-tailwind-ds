@@ -61,7 +61,7 @@ module.exports = {
       ],
       whitelistPatterns: [
         /prose-(sm|md|lg|xl|2xl)/,
-        /ds-button--(green|gray|accent|ghost|white|cta|cta_alt)$/
+        /ds-button--(green|gray|blue)$/
       ]
     }
   },

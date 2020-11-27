@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build-storybook": "nuxt storybook build --output-dir storybook-static",
+    "chromatic": "chromatic --project-token TOKEN_CHROMATIC --exit-zero-on-changes --exit-once-uploaded",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",

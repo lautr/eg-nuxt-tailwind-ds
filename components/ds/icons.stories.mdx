@@ -1,0 +1,47 @@
+import { Meta, Canvas, Story, ArgsTable, Props } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import icons from '~/configs/icons.js'
+
+<Meta
+  title='UI/Icons'
+/>
+
+export const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  template: `
+    <div class="grid grid-cols-8 gap-6">
+      <div v-for="(icon, key) in icons" :key="key">
+        <icon :icon="['fa', icon.iconName]" class="fill-current text-gray-400 h-8 block mx-auto" />
+        <small class="text-xs text-gray-600 block text-center mt-1">{{ icon.iconName }}</small>
+      </div>
+    </div>
+  `,
+});
+
+
+# Icons
+
+Icon component, implementing [Fontawesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free).
+
+* to add more icons use `~/configs/icons.js`
+* you can pick from https://fontawesome.com/icons?d=gallery&s=solid&m=free
+* for sizing and color use tailwind utility classes
+
+<Canvas>
+  <Story
+    name="Fontawesome"
+    args={{
+      iconType: 'user-secret',
+      icons: icons
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Example
+
+```html
+<icon :icon="['fal', 'user-secret']" class="fill-current text-gray-400 h-8" />
+```

@@ -1,0 +1,49 @@
+import { Meta, Canvas, Story, ArgsTable, Props } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+<Meta
+  title='UI/Card'
+/>
+
+export const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  template: `
+    <div style="max-width: 450px; margin: 0 auto;">
+      <ds-card :title="title" :image="image">
+        {{ content }}
+      </ds-card>
+    </div>`,
+});
+
+
+# Card
+
+The Card component
+
+<Canvas>
+  <Story
+    name="Full"
+    args={{
+      content: 'example content',
+      title: 'example heading'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Full" />
+
+## Text only version
+
+<Canvas>
+  <Story
+    name="Simple"
+    args={{
+      content: 'example content',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+

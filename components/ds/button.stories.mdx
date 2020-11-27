@@ -1,0 +1,55 @@
+import { Meta, Canvas, Story, ArgsTable, Props } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+<Meta
+  title='UI/Button'
+  argTypes={{
+    color: {
+      control: {
+        type: 'select',
+        options: [
+          'green',
+          'blue',
+          'gray'
+        ]
+      }
+    }
+  }}
+/>
+
+export const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  template: `
+    <div style="max-width: 450px; margin: 0 auto;">
+      <ds-button :color="color">
+        {{ content }}
+      </ds-button>
+    </div>`,
+});
+
+
+# Button
+
+The Button component
+
+<Canvas>
+  <Story
+    name="Full"
+    args={{
+      content: 'call to action',
+      color: 'green'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Full" />
+
+## Example
+
+```javascript
+<ds-button color="green">
+  some content
+</ds-button>
+```

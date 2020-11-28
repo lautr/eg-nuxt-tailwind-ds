@@ -24,7 +24,8 @@ module.exports = {
    */
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: 'production' === process.env.NODE_ENV,
+    enabled:
+      'production' === process.env.NODE_ENV && !process.env.DISABLE_PURGE,
     mode: 'all',
     content: [
       'assets/css/*.sass',

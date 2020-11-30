@@ -9,7 +9,7 @@ export const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   template: `
     <div style="max-width: 450px; margin: 0 auto;">
-      <ds-card :title="title" :image="image">
+      <ds-card :title="title" :image="image" :hasCta="hasCta" :ctaWording="ctaWording">
         {{ content }}
       </ds-card>
     </div>`,
@@ -26,7 +26,9 @@ The Card component
     args={{
       content: 'example content',
       title: 'example heading',
-      image: null
+      image: null,
+      hasCta: true,
+      ctaWording: 'click me'
     }}
   >
     {Template.bind({})}
@@ -43,7 +45,9 @@ The Card component
     args={{
       content: 'example content',
       title: null,
-      image: null
+      image: null,
+      hasCta: false,
+      ctaWording: null
     }}
   >
     {Template.bind({})}

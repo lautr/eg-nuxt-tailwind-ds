@@ -1808,20 +1808,20 @@
     consola "^2.11.3"
     eslint-loader "^4.0.2"
 
-"@nuxtjs/storybook@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/storybook/-/storybook-3.2.0.tgz#4a05cf8e443bb4bd34df7051a5dc4e972d68d195"
-  integrity sha512-zEhP4LrslJcV9SRqDnMGhdSZsb6jbXnG4sSD2KVV2TiFVbZFOsXH6xt+Tfc5mD8u106M4iqYEWaD/oZBSrl6Aw==
+"@nuxtjs/storybook@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/storybook/-/storybook-3.1.0.tgz#2566792ee9fcf0a460821255e97b6865c35903da"
+  integrity sha512-JrJAxY8serOO23+ofckHz0QqKKFfr2fHA6xYvi+Lnjxe8lZSvNeMO5dZoN1QZZkkHwyvNRvcMoGBDvGyyYha9g==
   dependencies:
     "@nuxt/devalue" "^1.2.4"
     "@storybook/addon-essentials" "^6.0.28"
     "@storybook/vue" "^6.0.28"
-    arg "^5.0.0"
+    arg "^4.1.3"
     babel-preset-vue "^2.0.2"
     consola "^2.15.0"
     create-require "^1.0.2"
-    jiti "^0.1.12"
-    upath "^2.0.1"
+    jiti "^0.1.11"
+    upath "^2.0.0"
 
 "@nuxtjs/stylelint-module@4.0.0":
   version "4.0.0"
@@ -3526,6 +3526,11 @@ are-we-there-yet@~1.1.2:
   dependencies:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
+
+arg@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.3.tgz#269fc7ad5b8e42cb63c896d5666017261c144089"
+  integrity sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==
 
 arg@^5.0.0:
   version "5.0.0"
@@ -8827,7 +8832,7 @@ jest-worker@^26.2.1, jest-worker@^26.6.2:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jiti@^0.1.11, jiti@^0.1.12, jiti@^0.1.16:
+jiti@^0.1.11, jiti@^0.1.16:
   version "0.1.16"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-0.1.16.tgz#f8c7d73b51153edfb43d3e5a4984537198771650"
   integrity sha512-fyMkReB81k8jzf9V97W/aUs8FQP/c4+jcP1+y/7yG8K/I6yhNbKVK9yI/GqUAn9WGLIMqLK95UgtQPHX+j3M8Q==
@@ -14594,7 +14599,7 @@ upath@^1.1.1:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-upath@^2.0.0, upath@^2.0.1:
+upath@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
   integrity sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==

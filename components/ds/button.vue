@@ -1,5 +1,6 @@
 <template>
   <div :class="[$style['ds-button'], $style['ds-button--' + color]]">
+    L{{ color }}L
     <slot />
   </div>
 </template>

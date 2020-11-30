@@ -21,4 +21,4 @@ jobs:
           projectToken: ${{ secrets.TOKEN_CHROMATIC }}
     env:
       CI: true
-      DISABLE_PURGE: true
+      DISABLE_PURGE_CSS: true

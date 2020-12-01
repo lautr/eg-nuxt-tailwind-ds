@@ -29,7 +29,7 @@
     "tailwindcss": "2.0.1-compat"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "3.1.0",
+    "@nuxtjs/eslint-config": "4.0.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/storybook": "3.2.0",
     "@nuxtjs/stylelint-module": "4.0.0",
